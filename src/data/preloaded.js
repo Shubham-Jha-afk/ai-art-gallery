@@ -87,7 +87,7 @@ const preloaded = [
   {
     id: 11,
     url: '/preloaded/dall-e4.png',
-    title: 'Alien City',
+    title: 'Desert Flower',
     creator: 'DALL·E 3',
     date: '2025-06-18',
     prompt: 'A giant eye blooming like a flower in a desert, melting clocks scattered around, dreamlike atmosphere, soft lighting, painterly strokes',
@@ -96,7 +96,7 @@ const preloaded = [
   {
     id: 12,
     url: '/preloaded/dall-e5.png',
-    title: 'Alien City',
+    title: 'New York',
     creator: 'DALL·E 3',
     date: '2025-06-18',
     prompt: 'New York alley during golden hour, graffiti walls, kids playing, street photography aesthetic, bokeh effect',
