@@ -21,7 +21,7 @@ const [dynamicImages, setDynamicImages] = useState([]);
 
 
 
-  // 🔧 Sync Tailwind dark mode
+  //  Tailwind dark mode
   useEffect(() => {
     document.documentElement.classList.toggle('dark', darkMode);
   }, [darkMode]);
@@ -35,13 +35,13 @@ const [dynamicImages, setDynamicImages] = useState([]);
       : [...prev, imageId]
   );
 };
-  // 🔧 Extract unique categories
+  //  Extract unique categories
   const categories = [
     ...new Set(preloaded.flatMap((img) => img.category)),
   ];
 
 
-  // 🔧 Filter images by selected categories
+  //  Filter images by categories
   const allImages = [...dynamicImages, ...preloaded];
 
 const filteredImages = allImages.filter((img) => {
@@ -61,7 +61,7 @@ const filteredImages = allImages.filter((img) => {
 });
 
 
-  // 🔧 Toggle individual category or reset all
+  //  Toggle individual category or reset 
   const handleToggleCategory = (cat) => {
     if (cat === 'ALL') {
       setSelectedCategories([]);
@@ -75,13 +75,13 @@ const filteredImages = allImages.filter((img) => {
     );
   };
 
-  // 🔧 Clear all filters
+  //  Clear 
   const handleClearFilters = () => {
     setSelectedCategories([]);
   };
   
   const handleFetchNewImage = async () => {
-  const newImage = await fetchFromDeepAI(); // can add prompt later
+  const newImage = await fetchFromDeepAI(); 
   setDynamicImages((prev) => [newImage, ...prev]);
 };
 
